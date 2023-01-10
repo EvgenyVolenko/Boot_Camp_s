@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 
 int size = 1_000_000;
-int m = 3_000;
+int m = 30_000;
 
 int[] array = Enumerable.Range(1, size)
                         .Select(item => Random.Shared.Next(10))
@@ -25,7 +25,7 @@ for (int i = 1; i < array.Length - m; i++)
 
 sw.Stop();
 
-Console.WriteLine($"Time = {sw.ElapsedMilliseconds}");
+Console.WriteLine($"Time = {sw.ElapsedMilliseconds} с");
 Console.WriteLine($"Результат первого алогритма = {max}");
 
 // Плохой вариант
@@ -44,5 +44,5 @@ for (int i = 1; i < array.Length - m; i++)
 
 sw.Stop();
 
-Console.WriteLine($"Time = {sw.ElapsedMilliseconds}");
+Console.WriteLine($"Time = {sw.ElapsedMilliseconds} с");
 Console.WriteLine($"Результат второго алогритма = {max1}");
