@@ -1,4 +1,15 @@
-﻿/* Сортировка выбором
+﻿using static Sorting;
+using static Infrastructure;
+using static System.Console;
+
+Clear();
+
+int[] array = CreateArray(50);
+Show(array);
+SortSelection(array);
+Show(array);
+
+/* Сортировка выбором
 [6, 15, 2, 9, -3]
 MIN = 6
 6 < 15
@@ -49,14 +60,3 @@ MIN = 15
 //     array[i] = temp;
 // }
 // Console.WriteLine("Конечный массив: [" + string.Join(", ", array) + "]");
-
-using static Sorting;
-using static Infrastructure;
-using static System.Console;
-
-Clear();
-
-int[] array = CreateArray(50);
-Show(array);
-SortSelection(array);
-Show(array);
