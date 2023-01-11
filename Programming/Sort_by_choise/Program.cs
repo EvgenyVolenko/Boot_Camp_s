@@ -3,11 +3,17 @@ using static Infrastructure;
 using static System.Console;
 
 Clear();
+// 
+// int[] array = CreateArray(size: 30, max: 100, min: 10);
+// Show(array);
+// SortSelection(array);
+// Show(array);
+30.CreateArray(min: 5, max: 51)
+  .Show()
+  .SortSelection()
+  .Show(". ");
 
-int[] array = CreateArray(50);
-Show(array);
-SortSelection(array);
-Show(array);
+
 
 /* Сортировка выбором
 [6, 15, 2, 9, -3]
