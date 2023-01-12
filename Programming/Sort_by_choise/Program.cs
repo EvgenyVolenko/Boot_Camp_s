@@ -8,7 +8,7 @@ Clear();
 // Show(array);
 // SortSelection(array);
 // Show(array);
-30.CreateArray(min: 5, max: 51)
+40.CreateArray(min: 5, max: 51)
   .Show()
   .SortSelection()
   .Show(". ");
