@@ -44,5 +44,5 @@ for (int i = 1; i < array.Length - m; i++)
 
 sw.Stop();
 
-Console.WriteLine($"Time = {sw.ElapsedMilliseconds} с");
+Console.WriteLine($"Time = {sw.ElapsedMilliseconds} мс");
 Console.WriteLine($"Результат второго алогритма = {max1}");

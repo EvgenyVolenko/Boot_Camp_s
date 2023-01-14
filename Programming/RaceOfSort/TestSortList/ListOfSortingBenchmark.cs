@@ -8,14 +8,14 @@ namespace TestSortList
     public class ListOfSortingBenchmark
     {
         //private readonly int[] arr = { 1, 2, 5, -3, 0, 2 };
-        private static readonly int[] arr = new int[10000];
+        private static readonly int[] arr = new int[1000];
         private static readonly Random _rand = new Random();
 
         static ListOfSortingBenchmark()
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = _rand.Next(0, 100);
+                arr[i] = _rand.Next(0, 10000);
             }
         }
 
@@ -66,6 +66,12 @@ namespace TestSortList
         {
             var testArr = GetArr();
             Array.Sort(testArr);
+        }
+        [Benchmark]
+        public void TestInsertionSort()
+        {
+            var testArr = GetArr();
+            ListOfSortingAlgs.InsertionSort(testArr); 
         }
     }
 }
