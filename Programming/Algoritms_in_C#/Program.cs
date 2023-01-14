@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-int size = 10_000_000;
+int size = 1_000_000;
 int m = 30_000;
 
 int[] array = Enumerable.Range(1, size)
