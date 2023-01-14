@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-int size = 1_000_000;
+int size = 10_000_000;
 int m = 30_000;
 
 int[] array = Enumerable.Range(1, size)
@@ -25,7 +25,7 @@ for (int i = 1; i < array.Length - m; i++)
 
 sw.Stop();
 
-Console.WriteLine($"Time = {sw.ElapsedMilliseconds} с");
+Console.WriteLine($"Time = {sw.ElapsedMilliseconds} мс");
 Console.WriteLine($"Результат первого алогритма = {max}");
 
 // Плохой вариант
