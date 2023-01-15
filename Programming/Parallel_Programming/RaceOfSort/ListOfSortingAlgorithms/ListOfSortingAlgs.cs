@@ -74,7 +74,7 @@
             {
                 for (int j = 0; j < res.GetLength(1); j++)
                 {
-                    res[i, j] = _rand.Next(50);
+                    res[i, j] = _rand.Next(-100, 100);
                 }
             }
             return res;
