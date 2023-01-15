@@ -23,8 +23,6 @@ public static class Sorting
             if(i < right) SortQuick(collection, i, right);
             if(left < j) SortQuick(collection, left, j);
         }
-
-
         return collection;
     }
 }
