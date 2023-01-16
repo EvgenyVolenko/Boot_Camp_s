@@ -3,7 +3,7 @@
     public class ListOfSortingAlgs
     {
         const int THREADS_NUMBER = 8;
-        const int N = 1000;
+        const int N = 3000;
 
         public static void Multiplication(int[,] a, int[,] b, int[,] r)
         {

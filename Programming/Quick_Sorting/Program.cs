@@ -1,8 +1,8 @@
 ﻿using static Sorting;
 
-int size = 1_000_000;
+int size = 100;
 
-var arr = size.CreateArray()
+var arr = size.CreateArray(min: -100, max: 100)
             .Show()
             .SortQuick(0, size - 1)
             .Show()

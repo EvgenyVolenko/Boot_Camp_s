@@ -7,7 +7,7 @@ namespace TestSortList
     [RankColumn]
     public class ListOfSortingBenchmark
     {
-        const int N = 1000;
+        const int N = 3000;
         private static readonly int[,] firstMatrix;
         private static readonly int[,] secondMatrix;
         private static int[,] serialResMatrix;
